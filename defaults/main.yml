@@ -164,6 +164,7 @@ swift_container_reconciler_program_config_options: /etc/swift/container-server/c
 swift_object_server_program_config_options: /etc/swift/object-server/object-server.conf
 swift_object_replicator_program_config_options: /etc/swift/object-server/object-server-replicator.conf
 swift_object_expirer_program_config_options: /etc/swift/object-server/object-expirer.conf
+swift_object_reconstructor_program_config_options: /etc/swift/object-server/object-server-replicator.conf
 
 swift_proxy_server_program_config_options: /etc/swift/proxy-server/proxy-server.conf
 
@@ -309,6 +310,7 @@ swift_object_program_names:
   - swift-object-updater
   - swift-object-replicator-server
   - swift-object-expirer
+  - swift-object-reconstructor
 
 swift_proxy_program_names:
   - swift-proxy-server

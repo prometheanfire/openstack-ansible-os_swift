@@ -86,8 +86,13 @@ swift_service_internaluri: "http://10.100.100.102:8080"
 swift_replication_address: "{{ replication_address }}"
 swift:
   storage_network: eth1
-  repl_network: eth3
+  replication_network: eth3
   part_power: 8
+  groups:
+    - account
+    - container
+    - gold
+    - ec-tests
   drives:
     - name: swift1
     - name: swift2
@@ -98,6 +103,15 @@ swift:
         index: 0
         repl_number: 3
         default: True
+    - policy:
+        name: ec-tests
+        index: 1
+        policy_type: erasure_coding
+        ec_type: liberasurecode_rs_vand
+        ec_num_data_fragments: 3
+        ec_num_parity_fragments: 2
+        ec_object_segment_size: 1048576
+
 swift_proxy_server_conf_overrides:
   "filter:keystoneauth":
     reseller_prefix: "AUTH, SERVICE"
