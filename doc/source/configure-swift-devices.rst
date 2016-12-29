@@ -67,7 +67,7 @@ use the storage devices ``sdc`` through to ``sdg``.
        # mount /srv/node/sdg
 
 To view an annotated example of the ``swift.yml`` file, see `Appendix A,
-*OSA configuration files* <app-configfiles.html>`_.
+*OSA Example test environment configuration* <http://docs.openstack.org/project-deploy-guide/openstack-ansible/newton/app-config-test.html>`_.
 
 For the following mounted devices:
 
