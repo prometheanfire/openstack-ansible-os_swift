@@ -26,7 +26,7 @@ swift_package_state: "latest"
 swift_pip_package_state: "latest"
 
 swift_git_repo: https://git.openstack.org/openstack/swift
-swift_git_install_branch: master
+swift_git_install_branch: stable/ocata
 swift_developer_mode: false
 swift_developer_constraints:
   - "git+{{ swift_git_repo }}@{{ swift_git_install_branch }}#egg=swift"
