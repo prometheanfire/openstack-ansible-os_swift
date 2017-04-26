@@ -27,9 +27,6 @@
   service:
    name: "{{ item.value.program_name }}"
    enabled: "yes"
-  with_dict: "{{ swift_services }}"
-  when:
-    - inventory_hostname in groups[item.value.group]
-    - "{{ item.value.service_en | default(true) }}"
+  with_dict: "{{ filtered_swift_services }}"
   notify:
     - Restart swift services
