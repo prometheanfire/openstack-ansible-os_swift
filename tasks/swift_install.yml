@@ -39,11 +39,20 @@
   retries: 5
   delay: 2
 
+- name: Retrieve checksum for venv download
+  uri:
+    url: "{{ swift_venv_download_url | replace('tgz', 'checksum') }}"
+    return_content: yes
+  register: swift_venv_checksum
+  when:
+    - not swift_pypy_enabled | bool
+    - not swift_developer_mode | bool
+
 - name: Attempt venv download
   get_url:
     url: "{{ swift_venv_download_url }}"
     dest: "/var/cache/{{ swift_venv_download_url | basename }}"
-    checksum: "sha1:{{ lookup('url', swift_venv_download_url | replace('tgz', 'checksum')) }}"
+    checksum: "sha1:{{ swift_venv_checksum.content | trim }}"
   register: swift_get_venv
   when:
     - not swift_pypy_enabled | bool
