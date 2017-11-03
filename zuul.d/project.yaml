@@ -20,8 +20,12 @@
         - openstack-ansible-linters
         - openstack-ansible-functional-ubuntu-trusty
         - openstack-ansible-functional-ubuntu-xenial
+        - openstack-ansible-multireg-ubuntu-trusty-nv
+        - openstack-ansible-multireg-ubuntu-xenial
+        - openstack-ansible-pypy-ubuntu-xenial-nv
     gate:
       jobs:
         - openstack-ansible-linters
         - openstack-ansible-functional-ubuntu-trusty
         - openstack-ansible-functional-ubuntu-xenial
+        - openstack-ansible-multireg-ubuntu-xenial
