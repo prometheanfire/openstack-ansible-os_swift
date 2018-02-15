@@ -27,11 +27,11 @@ swift_pip_package_state: "latest"
 
 # Git repo details for swift
 swift_git_repo: https://git.openstack.org/openstack/swift
-swift_git_install_branch: master
+swift_git_install_branch: "stable/queens"
 
 # Git repo details for swift3 middleware
 swift_swift3_git_repo: https://git.openstack.org/openstack/swift3
-swift_swift3_git_install_branch: master
+swift_swift3_git_install_branch: "1c117c96dda8113c3398c16e68b61efef397de74" # no "stable/queens" branch for swift3
 
 # Developer mode settings
 swift_developer_mode: false
