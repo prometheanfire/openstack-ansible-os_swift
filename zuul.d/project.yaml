@@ -22,9 +22,7 @@
         - openstack-ansible-functional-centos-7-nv
         - openstack-ansible-functional-opensuse-423
         - openstack-ansible-functional-ubuntu-xenial
-        # TODO(evrardjp) Reintroduce upgrade gating when
-        # clouds.yaml is deployed on localhost
-        #- openstack-ansible-upgrade-ubuntu-xenial
+        - openstack-ansible-upgrade-ubuntu-xenial
         - openstack-ansible-multireg-ubuntu-xenial
         - openstack-ansible-multireg-centos-7-nv
         - openstack-ansible-pypy-ubuntu-xenial-nv
@@ -40,7 +38,5 @@
         # is fixed
         - openstack-ansible-functional-opensuse-423
         - openstack-ansible-functional-ubuntu-xenial
-        # TODO(evrardjp) Reintroduce upgrade gating when
-        # clouds.yaml is deployed on localhost
-        #- openstack-ansible-upgrade-ubuntu-xenial
+        - openstack-ansible-upgrade-ubuntu-xenial
         - openstack-ansible-multireg-ubuntu-xenial
