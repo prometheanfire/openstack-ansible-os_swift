@@ -35,9 +35,10 @@ swift_install_method: "source"
 
 # Git repo details for swift
 swift_git_repo: https://git.openstack.org/openstack/swift
-swift_git_install_branch: master
+swift_git_install_branch: 'stable/rocky'
 
-# Git repo details for swift3 middleware
+# The swift3 middleware was included in swift during Rocky cycle
+# and should be removed as a separate entity
 swift_swift3_git_repo: https://git.openstack.org/openstack/swift3
 swift_swift3_git_install_branch: master
 
