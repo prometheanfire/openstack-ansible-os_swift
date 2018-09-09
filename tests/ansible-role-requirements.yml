@@ -46,7 +46,3 @@
   src: https://git.openstack.org/openstack/openstack-ansible-rsyslog_client
   scm: git
   version: stable/pike
-- name: os_previous_swift
-  src: https://git.openstack.org/openstack/openstack-ansible-os_swift
-  scm: git
-  version: stable/ocata
