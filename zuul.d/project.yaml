@@ -16,17 +16,10 @@
     check:
       jobs:
         - openstack-ansible-linters
-        - openstack-ansible-functional-centos-7-nv
+        - openstack-ansible-functional-centos-7:
+            voting: false
         - openstack-ansible-functional-ubuntu-xenial
-        - openstack-ansible-upgrade-ubuntu-xenial
-        - openstack-ansible-multireg-ubuntu-xenial
-        - openstack-ansible-multireg-centos-7-nv
-    experimental:
-      jobs:
-        - openstack-ansible-pypy-ubuntu-xenial-nv
     gate:
       jobs:
         - openstack-ansible-linters
         - openstack-ansible-functional-ubuntu-xenial
-        - openstack-ansible-upgrade-ubuntu-xenial
-        - openstack-ansible-multireg-ubuntu-xenial
