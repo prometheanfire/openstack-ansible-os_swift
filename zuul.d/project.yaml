@@ -17,9 +17,7 @@
       jobs:
         - openstack-ansible-functional-centos-7:
             voting: false
-        - openstack-ansible-functional-opensuse-423
         - openstack-ansible-functional-ubuntu-xenial
     gate:
       jobs:
-        - openstack-ansible-functional-opensuse-423
         - openstack-ansible-functional-ubuntu-xenial
